@@ -45,12 +45,15 @@ export default function App() {
         <Route path="/contact-us" component={ContactUsPage} />
         <Route path="/portfolio" component={PortfolioPage} />
       </div> */}
-      <Switch>
+      {/* <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/contact-us" component={ContactUsPage} />
         <Route exact path="/portfolio" component={PortfolioPage} />
         {/* <Route exact path="/portfolio" component={NotFound} /> */}
-      </Switch>
+      {/* </Switch> */}
+      <Route exact path="/" component={HomePage} />
+      <Route exact path="/contact-us" component={ContactUsPage} />
+      <Route exact path="/portfolio" component={PortfolioPage} />
     </HashRouter>
   );
 }

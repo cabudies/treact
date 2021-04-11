@@ -172,7 +172,7 @@ export default ({
     'On Going': [
       {
         imageSrc:
-          "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+          "https://raw.githubusercontent.com/cabudies/treact/main/src/images/companies/startups-in.png",
         title: "Startups.in",
         content: "ELearning",
         price: "React, Django, Postgre SQL, VIMEO",
@@ -182,7 +182,7 @@ export default ({
       },
       {
         imageSrc:
-          "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+          "https://raw.githubusercontent.com/cabudies/treact/main/src/images/companies/flight-duck.png",
         title: "Flight Duck",
         content: "Travel",
         price: "React, Django, Postgre SQL",

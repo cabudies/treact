@@ -9,6 +9,9 @@ import logo from "../../images/only_logo_1.svg";
 
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
+import { BrowserRouter as Router, Switch, Route, HashRouter, Link } from "react-router-dom";
+import ContactUsPage from "pages/ContactUs.js";
+import PortfolioPage from "components/cards/TabCardGrid.js";
 
 const Header = tw.header`
   flex justify-between items-center
@@ -56,10 +59,12 @@ export const DesktopNavLinks = tw.nav`
 export default ({ roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = "lg" }) => {
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink href="/portfolio">Portfolio</NavLink>
       {/* <NavLink href="/courses">Courses</NavLink>
       <NavLink href="/blog">Blog</NavLink> */}
-      <NavLink href="/contact-us">Contact Us</NavLink>
+      <NavLink href="/treact/portfolio">Portfolio</NavLink>
+      <NavLink href="/treact/contact-us">Contact Us</NavLink>
+      {/* <Route path="/portfolio" component={PortfolioPage} />
+      <Route path="/contact-us" component={ContactUsPage} />       */}
     </NavLinks>
   ];
 

@@ -3,6 +3,8 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import {ReactComponent as SvgDotPatternIcon} from "../../images/dot-pattern.svg"
+import * as emailjs from 'emailjs-com'
+import Swal from 'sweetalert2'
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -42,22 +44,30 @@ const FormRequest = () => {
 
   const submitRequest = async (e) => {
     e.preventDefault();
-    console.log({ email, message });
-    const response = await fetch("https://society-of-ai.herokuapp.com/access", { 
-      method: 'POST', 
-      headers: { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      }, 
-      body: JSON.stringify({email, message}) 
-    }); 
-    const resData = await response.json(); 
-    if (resData.status === 'success'){
-      alert("Message Sent."); 
-      document.getElementById("user-query-form").reset();
-    }else if(resData.status === 'fail'){
-      alert("Message failed to send.")
+    let templateParams = {
+      from_name: email,
+      to_name: 'societyofai.info@gmail.com',
+      subject: 'Website Contact Form',
+      message: message,
     }
+
+    emailjs.send(
+      'service_sbrqqsb',
+      'template_vq9qjd1',
+       templateParams,
+      'user_YwXhkdH6hRGIpiGOpYZz5'
+    ).then(res => {
+      Swal.fire({
+        title: 'Email Successfully Sent',
+        icon: 'success'
+      })
+    }).catch(err => {
+      Swal.fire({
+        title: 'Email Failed to Send',
+        icon: 'error'
+      })
+    })
+    document.getElementById("user-query-form").reset();
   };
 
 

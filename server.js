@@ -14,6 +14,12 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 // Static folder
 // app.use('/public', express.static(path.join(__dirname, 'public')));
+var corsOptions = {
+  origin: 'https://society-of-ai.herokuapp.com/',
+  optionsSuccessStatus: 200 // For legacy browser support
+}
+
+app.use(cors(corsOptions));
 app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

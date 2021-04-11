@@ -41,10 +41,10 @@ export default () => {
           </LogoContainer>
           <LinksContainer>
             <Link href="/">Home</Link>
-            <Link href="/treact#/portfolio">Portfolio</Link>
+            <Link href="/#/portfolio">Portfolio</Link>
             {/* <Link href="/courses">Courses</Link>
             <Link href="/blog">Blog</Link> */}
-            <Link href="/treact#/contact-us">Contact Us</Link>
+            <Link href="/#/contact-us">Contact Us</Link>
           </LinksContainer>
           <SocialLinksContainer>
             <SocialLink href="https://www.facebook.com/societyofai/">

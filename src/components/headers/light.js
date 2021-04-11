@@ -61,8 +61,8 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
     <NavLinks key={1}>
       {/* <NavLink href="/courses">Courses</NavLink>
       <NavLink href="/blog">Blog</NavLink> */}
-      <NavLink href="/treact#/portfolio">Portfolio</NavLink>
-      <NavLink href="/treact#/contact-us">Contact Us</NavLink>
+      <NavLink href="/#/portfolio">Portfolio</NavLink>
+      <NavLink href="/#/contact-us">Contact Us</NavLink>
       {/* <Route path="/portfolio" component={PortfolioPage} />
       <Route path="/contact-us" component={ContactUsPage} />       */}
     </NavLinks>

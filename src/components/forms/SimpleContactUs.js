@@ -43,7 +43,7 @@ const FormRequest = () => {
   const submitRequest = async (e) => {
     e.preventDefault();
     console.log({ email, message });
-    const response = await fetch("https://cabudies.github.io/treact/access", { 
+    const response = await fetch("https://society-of-ai.herokuapp.com/access", { 
       method: 'POST', 
       headers: { 
         'Content-Type': 'application/json',

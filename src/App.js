@@ -15,7 +15,7 @@ export default function App() {
   
   return (
     <HashRouter basename='/'>
-      <Route exact path="/" component={HomePage} />
+      <Route exact path="" component={HomePage} />
       <Route exact path="#/contact-us" component={ContactUsPage} />
       <Route exact path="#/portfolio" component={PortfolioPage} />
     </HashRouter>

@@ -40,7 +40,7 @@ export default () => {
             <LogoText>Society of AI</LogoText>
           </LogoContainer>
           <LinksContainer>
-            <Link href="/">Home</Link>
+            <Link href="/treact">Home</Link>
             <Link href="#/portfolio">Portfolio</Link>
             {/* <Link href="/courses">Courses</Link>
             <Link href="/blog">Blog</Link> */}

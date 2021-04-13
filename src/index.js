@@ -12,7 +12,7 @@ import CoursesPage from "components/cards/ThreeColSlider.js";
 Modal.setAppElement("#root");
 
 ReactDOM.render(
-  <HashRouter basename='/#'>
+  <HashRouter basename='treact/#'>
     <App />
   </HashRouter>,
   document.getElementById("root")

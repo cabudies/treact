@@ -9,15 +9,17 @@ import BlogIndexPage from "components/blogs/PopularAndRecentBlogPosts.js";
 import PortfolioPage from "components/cards/TabCardGrid.js";
 import CoursesPage from "components/cards/ThreeColSlider.js";
 
-import { BrowserRouter as Router, Switch, Route, HashRouter, Link } from "react-router-dom";
+import { Route, HashRouter, withRouter, Switch } from "react-router-dom";
 
 export default function App() {
   
   return (
-    <HashRouter basename='/'>
-      <Route exact path="/" component={HomePage} />
-      <Route exact path="#/contact-us" component={ContactUsPage} />
-      <Route exact path="#/portfolio" component={PortfolioPage} />
-    </HashRouter>
+    <div>
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/contact-us" component={ContactUsPage} />
+        <Route path="/portfolio" component={PortfolioPage} />
+      </Switch>
+    </div>
   );
 }

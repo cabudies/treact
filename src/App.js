@@ -52,8 +52,8 @@ export default function App() {
         {/* <Route exact path="/portfolio" component={NotFound} /> */}
       {/* </Switch> */}
       <Route exact path="/" component={HomePage} />
-      <Route exact path="/#/contact-us" component={ContactUsPage} />
-      <Route exact path="/#/portfolio" component={PortfolioPage} />
+      <Route exact path="/contact-us" component={ContactUsPage} />
+      <Route exact path="/portfolio" component={PortfolioPage} />
     </HashRouter>
   );
 }
